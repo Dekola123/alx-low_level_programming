@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 
 /**
- *
- * main - Entry Point
- *
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
-	write("and that piece of code is usefu;l\" - Dora Korpar, 2015-10-19\n");
+	write(STDOUT_FILENO, "and that piece of atr is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
