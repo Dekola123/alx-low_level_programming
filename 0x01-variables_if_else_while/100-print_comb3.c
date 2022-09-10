@@ -11,9 +11,9 @@ int main(void)
 	int d;
 	int i;
 
-	for (d = '0'; d <= '9'; d++)
+	for (d = 0; d <= 9; d++)
 	{
-		if (i <= '9')
+		if (i <= 9)
 		{
 			d = d && i;
 			i++;
