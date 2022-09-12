@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Return: ALways 0 (Success)
+ * Retturn: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,12 +14,14 @@ int main(void)
 	{
 		putchar((d / 10) + '0');
 		putchar((d % 10) + '0');
-		if (d != 89)
+
+		if (d != 99)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
