@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - Entry point
@@ -16,11 +16,4 @@ void print_alphabet()
 		putchar(n);
 	}
 	putchar('\n');
-}
-int main(void)
-{
-	int low;
-	print_alphabet();
-
-	return (0);
 }
