@@ -2,10 +2,10 @@
 #include "main.h"
 /**
  * main - Entry point
- *
+ * Description: write a program hthat prints "_putchar" followed by a new line
  * REturn: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
