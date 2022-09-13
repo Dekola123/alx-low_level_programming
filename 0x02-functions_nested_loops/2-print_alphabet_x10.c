@@ -1,25 +1,25 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - Entry point
  *
- * printing 10x the alhabet
+ * print_alphabet_x10 - printing 10x the alhabet
  *
  * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
-	int n;
+	char low;
 	int co;
 
 	co = 0;
 
 	while (co < 10)
 	{
-		for (n = 'a'; n <= 'z'; n++)
+		for (low = 'a'; low <= 'z'; low++)
 		{
-			_putchar(n);
+			_putchar(low);
 			_putchar('\n');
 		}
-		co++
 	}
 }
