@@ -7,7 +7,7 @@
  * Return: On success 1
  * else, return 0
  */
-int _isupper(char c)
+int _isupper(int c)
 {
 	int c;
 
