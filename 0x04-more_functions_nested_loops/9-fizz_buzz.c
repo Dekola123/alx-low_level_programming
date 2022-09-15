@@ -1,9 +1,7 @@
 #include <stdio.h>
-#include <string.h>
 /**
- * main - replace mutiples of 3 and 5
- *
- * Return: Always 0.
+ * fizz_buzz - replace mutiples of 3 and 5 with fizz buzz
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
