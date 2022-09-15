@@ -11,26 +11,27 @@ int main(void)
 	char ch2[] = "Buzz";
 	char ch3[] = "FizzBuzz";
 
-	for (i = 1; i <= 100; i++)
+	i = 1;
+	printf("%d", i);
+	for (i = 2; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s", ch3);
+			printf(" %s", ch3);
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s", ch1);
+			printf(" %s", ch1);
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s", ch2);
+			printf(" %s", ch2);
 		}
 		else
 		{
-			printf("%d", i);
+			printf(" %d", i);
 		}
-		putchar(' ');
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
