@@ -19,7 +19,7 @@ int main(void)
 		{
 			printf("%s", ch3);
 		}
-		else if ( i % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("%s", ch1);
 		}
@@ -27,7 +27,7 @@ int main(void)
 		{
 			printf("%s", ch2);
 		}
-		else 
+		else
 		{
 			printf("%d", i);
 		}
