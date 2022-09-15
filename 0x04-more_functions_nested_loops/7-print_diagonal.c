@@ -19,7 +19,7 @@ void print_diagonal(int n)
 		else
 		{
 			_putchar(' ' * space);
-			_putchar(95);
+			_putchar(92);
 		}
 		_putchar('\n');
 	}
