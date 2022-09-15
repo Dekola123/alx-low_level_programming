@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <string.h>
 /**
  * main - replace mutiples of 3 and 5
  *
@@ -9,29 +9,30 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; n < 100; i++)
+	char ch1[] = "Fizz";
+	char ch2[] = "Buzz";
+	char ch3[] = "FizzBuzz";
+
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("%s", "FizzBuzz");
+			printf("%s", ch3);
 		}
-		else if (i % 3 == 0)
+		else if ( i % 3 == 0)
 		{
-			printf("%s", "Fizz");
+			printf("%s", ch1);
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s", "Buzz");
+			printf("%s", ch2);
 		}
-		else
+		else 
 		{
 			printf("%d", i);
 		}
-		if (i != 100)
-		{
-			printf(" ");
-		}
+		putchar(' ');
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
