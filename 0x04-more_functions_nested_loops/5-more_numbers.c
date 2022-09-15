@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_numbers - print 10 times number
+ * more_numbers - print 10 times number
  *
  * Return: Always 0 (Success)
  */
-void print_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
