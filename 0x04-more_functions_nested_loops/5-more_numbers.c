@@ -2,19 +2,19 @@
 /**
  * more_numbers - print numbers between 0 to 14
  * 10 times
- * Return: Always 0 (Success)
+ * Return: no return
  */
 void more_numbers(void)
 {
-	int i, n;
+	int i, ch;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 15; j++)
+		for (ch = 0; ch < 15; ch++)
 		{
-			if (j >= 10)
-				_putchar('0' + (j / 10));
-			_putchar('0' + (j % 10));
+			if (ch >= 10)
+				_putchar('0' + (ch / 10));
+			_putchar('0' + (ch % 10));
 		}
 		_putchar('\n');
 	}
