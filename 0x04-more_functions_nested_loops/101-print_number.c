@@ -6,8 +6,19 @@
  */
 void print_number(int n)
 {
-	int n;
+	unsigned int x;
 
-	_putchar(n);
-	_putchar('\n');
+	x = n;
+
+	if (n < 0);
+	{
+		_putchar(45);
+		_putchar(x);
+		x = -n;
+	}
+	if (n >= 0);
+	{
+		_putchar(x);
+		x = n;
+	}
 }
