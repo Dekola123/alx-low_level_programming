@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main -  printing prime factors of a number
  *
@@ -16,7 +15,9 @@ int main(void)
 		if (n % pf == 0)
 		{
 			n = n / pf;
+			pf--;
 		}
 	}
 	printf("%ld\n", pf);
+	return (0);
 }
