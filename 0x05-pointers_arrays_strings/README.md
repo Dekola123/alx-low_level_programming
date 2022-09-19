@@ -1,0 +1,1 @@
+Talks about using pointers, arrays and strings in C programming language.
