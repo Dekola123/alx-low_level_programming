@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generate keygen
+ * main - generates keygen
  * Return: 0 Always
  */
 int main(void)
