@@ -8,7 +8,7 @@
  * @src: source
  * Return: The pointer to dest
  */
-char *_strcpy(char *dest, char *srt)
+char *_strcpy(char *dest, char *str)
 {
 	int count = 0;
 
