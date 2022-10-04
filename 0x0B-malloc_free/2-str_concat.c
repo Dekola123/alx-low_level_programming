@@ -1,39 +1,52 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * str_concat - concats two strings
+ * @s1: input pointer to the first string
+ * @s2: input pointer to the second string
+ * Return: A pointer to concatenates string or NULL is str is NULL
  */
 char *str_concat(char *s1, char *s2)
 {
-	int end1, end2, i = 0;
-	char *array;
+	char *new_str, *starts1, *starts2;
+	int i = 0, lens1 = 0, lens2 = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		s1 = s2 = "";
-	for (end1 = 0; end1 <= *s1; end1++)
-	{
-	}
-	for (end2 = 0; end2 <= *s2; end2++)
-	{
-	}
-	array = malloc(sizeof(char) * (end1 + end2 + 1));
-	if (array == NULL)
-		return (NULL);
+	starts1 = s1;
+	starts2 = s2;
+
+	if (s1 == NULL)
+		s1 = "";
 	while (*s1)
 	{
-		array[i] = *s1;
-		i++;
+		lens1++;
 		s1++;
 	}
+	s1 = starts1;
+	if (s2 == NULL)
+		s2 = "";
 	while (*s2)
 	{
-		array[i] = *s2;
-		i++;
+		lens2++;
 		s2++;
 	}
-	return (array);
+	s2 = starts2;
+	new_str = malloc(sizeofc(char) * (lens1 + lens2 + 1));
+	starts1 = new_str;
+	if (new_str == NULL)
+		return (NULL);
+	for (; i < (lens + lens2); i++)
+	{
+		if (i < lens1)
+		{
+			new_str[i] = *s1;
+			s1++;
+		}
+		else
+		{
+			new_str[i] = *s2;
+			s2++;
+		}
+	}
+	new_str[i] = '\0';
+	return (starts1);
 }
