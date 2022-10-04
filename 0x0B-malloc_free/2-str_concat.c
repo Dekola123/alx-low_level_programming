@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
- * str_concat - concats two strings
- * @s1: input pointer to the first string
- * @s2: input pointer to the second string
- * Return: A pointer to concatenates string or NULL is str is NULL
+ * str_concat - A function that concatenates two strings
+ * @s1: An input pointer of the first string
+ * @s2: An input pointer of the second string
+ * Return: Apointer to concatened strings or NULL if it str is NULL
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -30,11 +30,11 @@ char *str_concat(char *s1, char *s2)
 		s2++;
 	}
 	s2 = starts2;
-	new_str = malloc(sizeofc(char) * (lens1 + lens2 + 1));
+	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
 	starts1 = new_str;
 	if (new_str == NULL)
 		return (NULL);
-	for (; i < (lens + lens2); i++)
+	for (; i < (lens1 + lens2); i++)
 	{
 		if (i < lens1)
 		{
